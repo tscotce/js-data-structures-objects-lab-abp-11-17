@@ -1,4 +1,4 @@
-driver = {name: 'Sam'}
+const driver = {name: 'Sam'}
 function updateDriverWithKeyAndValue (obj, key, value) {
   const seconddriver = {...driver};
   seconddriver [key] = value
@@ -6,8 +6,10 @@ function updateDriverWithKeyAndValue (obj, key, value) {
  }
 function destructivelyUpdateDriverWithKeyAndValue (obj, key, value) {
   obj [key] = value;
-  const thirddriver = (driver, 'address', '12 Broadway')
-  return thirddriver
+  driver.address = '12 Broadway';
+  return driver;
+  // const thirddriver = (driver, 'address', '12 Broadway')
+  // return thirddriver
 }
 function deleteFromDriverByKey (obj, key, value) {
  const newdriver = (driver, 'name')
