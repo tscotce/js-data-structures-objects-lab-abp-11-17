@@ -1,4 +1,4 @@
-const driver = {name: 'Sam'}
+let driver = {name: 'Sam'}
 function updateDriverWithKeyAndValue (obj, key, value) {
   const seconddriver = {...driver};
   seconddriver [key] = value
